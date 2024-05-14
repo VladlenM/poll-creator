@@ -1,0 +1,35 @@
+@import "../../assets/variables";
+
+.TextFieldContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 16px;
+
+    label {
+        margin-bottom: 15px;
+        font-weight: 500;
+    }
+
+    input, textarea {
+        padding: 7px 0;
+        font-size: 16px;
+        line-height: 1.2em;
+        border:unset;
+        font-weight: 400;
+        border-bottom: 1px solid $COLOR_BORDER;
+        transition: 0.3s all;
+
+        &:hover {
+            border-color: $COLOR_BLACK;
+        }
+
+        &:focus-visible {
+            outline: unset;
+        }
+
+        &::placeholder {
+            color: #CCCCCC;
+        }
+    }
+}

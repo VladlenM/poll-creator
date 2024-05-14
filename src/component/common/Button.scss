@@ -1,0 +1,45 @@
+@import "../../assets/variables";
+
+.ButtonContainer {
+    display: flex;
+    padding: 8px 18px;
+    font-size: 12px;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 600;
+    transition: $TRANSITION_TIME all;
+
+    &.disabled {
+        pointer-events: none;
+    }
+
+    &.primary {
+        background: $COLOR_MAIN;
+        border-radius: $BORDER_RADIUS;
+        color: white;
+
+        &:hover {
+            background: $COLOR_MAIN_HOVER;
+        }
+
+        &.disabled {
+            background: $COLOR_BORDER;
+
+            &:hover {
+                background: unset;
+                color: $COLOR_MAIN_HOVER;
+            }
+        }
+    }
+
+    &.link {
+        background: unset;
+        padding: 0;
+        color: $COLOR_MAIN;
+
+        &:hover {
+            color: $COLOR_MAIN_HOVER;
+        }
+    }
+}

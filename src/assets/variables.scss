@@ -1,0 +1,27 @@
+$COLOR_MAIN: #27A98B;
+$COLOR_BLACK: #000000;
+$COLOR_BORDER: #F2EEEE;
+$COLOR_ERROR: #E15241;
+$COLOR_MAIN_HOVER: #1f8a72;
+
+$BORDER_RADIUS: 4px;
+$TRANSITION_TIME: 0.3s;
+
+@mixin centeredContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin tablet_view() {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin mobile_view() {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+

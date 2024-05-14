@@ -1,0 +1,18 @@
+.SelectFieldConniner {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 14px;
+
+    select {
+        padding: 5px 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid lightgrey;
+        transition: 0.3s all;
+
+        &:hover {
+            border-color: black;
+        }
+    }
+}

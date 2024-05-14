@@ -1,0 +1,33 @@
+@import "../assets/variables";
+
+.PollPageWrapper {
+  @include centeredContent;
+  padding: 100px 20px 0;
+  gap: 100px;
+  overflow: hidden;
+  flex-direction: column;
+
+
+  .ExistedPollsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+
+    .ButtonContainer {
+      width: fit-content;
+    }
+
+    .ExistedPollsContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      font-size: 12px;
+    }
+  }
+
+  @include mobile_view {
+    padding-top: 20px;
+  }
+}
+
